@@ -1,22 +1,22 @@
+<!--
 <template>
-    <el-row type="flex" justify="center">
-        <el-col>
-            <el-row>
-                <el-col :span="8">
-                    <el-input v-model="processName"></el-input>
-                </el-col>
-                <el-col :span="8">
-                    <el-button class="my-button" type="primary" @click="clearValue">Clear</el-button>
-                </el-col>
-                <el-col :span="8">
-                    <el-button type="success" @click="saveProcess">Send</el-button>
-                </el-col>
-            </el-row>
-            <el-row>
-                <p>Current input value is: {{ inputValue }}</p>
-            </el-row>
-        </el-col>
-    </el-row>
+    <el-form ref="form" :model="form" label-width="80px">
+        <el-row>
+            <el-col :span="8">
+                <el-input v-model="processName"></el-input>
+            </el-col>
+            <el-col :span="8">
+                <el-button class="my-button" type="primary" @click="clearValue">Clear</el-button>
+            </el-col>
+            <el-col :span="8">
+                <el-button type="success" @click="saveProcess">Send</el-button>
+            </el-col>
+        </el-row>
+        <el-row>
+            <p>Current input value is: {{ inputValue }}</p>
+        </el-row>
+    </el-form>
+
 </template>
 
 <script>
@@ -52,4 +52,4 @@ export default {
         background-color: brown;
         color: azure;
     }
-</style>
+</style>-->

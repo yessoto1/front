@@ -1,5 +1,5 @@
 <template>
-    <div id="manage">
+    <div id="man-age">
         <open-new-process></open-new-process>
     </div>
 </template>
@@ -8,8 +8,8 @@
     import OpenNewProcess from "./components/process/OpenNewProcess";
 
     export default {
-        name: "manage",
-        components:{
+        name: "Manage",
+        components: {
             OpenNewProcess
         }
     }

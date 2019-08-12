@@ -1,3 +1,4 @@
+<!--
 <template>
     <div id="app">
         <test-component></test-component>
@@ -28,3 +29,4 @@
         margin-top: 60px;
     }
 </style>
+-->
