@@ -11,9 +11,10 @@
                       placeholder="Ingrese contraseña"></el-input>
         </el-form-item>
         <el-form-item>
-            <el-button type="primary" @click="signIn('form')">Ingresar</el-button>
+            <el-button type="primary" @click="$router.replace('/welcome')">Ingresar</el-button>
         </el-form-item>
     </el-form>
+<!--    <Button @click="$router.replace('/create_post')">Edit Post</Button>-->
 </template>
 
 <script>

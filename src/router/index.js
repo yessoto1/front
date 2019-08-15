@@ -15,6 +15,7 @@ import ListBestPractices from "../components/identify/ListBestPractices";
 import NewBestPractice from "../components/identify/NewBestPractice";
 import AnalysisDetail from "../components/analyze/AnalysisDetail";
 import Treatment from "../components/treatment/Treatment";
+import Welcome from "../components/welcome/Welcome";
 
 Vue.use(Vuex);
 Vue.use(Router)
@@ -25,6 +26,11 @@ export default new Router({
             path: '/',
             name: 'Login',
             component: FormLogin
+        },
+        {
+            path: '/welcome',
+            name: 'Welcome',
+            component: Welcome
         },
         {
             path: '/form-navbar',
