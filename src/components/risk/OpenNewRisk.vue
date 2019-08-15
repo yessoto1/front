@@ -7,16 +7,16 @@
                 :visible.sync="dialogFormVisible">
             <el-form>
                 <el-form-item label="Código de proceso:" :label-width="formLabelWidth">
-                    <el-input v-model="riskDto.processId" autocomplete="off" style="width: 400px;"></el-input>
+                    <el-input v-model="riskRequestDto.processId" autocomplete="off" style="width: 400px;"></el-input>
                 </el-form-item>
                 <el-form-item label="Zones" :label-width="formLabelWidth">
-                    <el-select v-model="riskDto.riskType" placeholder="Elegir tipo de riesgo" style="width: 400px;">
+                    <el-select v-model="riskRequestDto.riskType" placeholder="Elegir tipo de riesgo" style="width: 400px;">
                         <el-option label="Estratégico" value="1"></el-option>
                         <el-option label="Calidad" value="2"></el-option>
                     </el-select>
                 </el-form-item>
                 <el-form-item label="Nombre:" :label-width="formLabelWidth">
-                    <el-input v-model="riskDto.riskName" autocomplete="off" style="width: 400px;"></el-input>
+                    <el-input v-model="riskRequestDto.riskName" autocomplete="off" style="width: 400px;"></el-input>
                 </el-form-item>
             </el-form>
             <span slot="footer" class="dialog-footer">
@@ -33,7 +33,7 @@
         data() {
             return {
                 dialogFormVisible: false,
-                riskDto: {
+                riskRequestDto: {
                     riskType: '',
                     riskName: '',
                     processId: ''
@@ -43,7 +43,7 @@
         },
         methods: {
             saveRisk() {
-                this.$store.dispatch('saveRisk', this.riskDto)
+                this.$store.dispatch('saveRisk', this.riskRequestDto)
                     .then((response) => {
                         this.$message(response);
                     });
