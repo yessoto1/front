@@ -15,7 +15,9 @@ import ListBestPractices from "../components/identify/ListBestPractices";
 import NewBestPractice from "../components/identify/NewBestPractice";
 import AnalysisDetail from "../components/analyze/AnalysisDetail";
 import Treatment from "../components/treatment/Treatment";
-import Welcome from "../components/welcome/Welcome";
+import Welcome from "../pages/welcome/Welcome";
+import ViewComponents from "../pages/welcome/ViewComponents";
+import RiskManage from "../pages/manage/RiskManage";
 
 Vue.use(Vuex);
 Vue.use(Router)
@@ -31,6 +33,16 @@ export default new Router({
             path: '/welcome',
             name: 'Welcome',
             component: Welcome
+        },
+        {
+            path: '/risk-manage',
+            name: 'RiskManage',
+            component: RiskManage
+        },
+        {
+            path: '/view-components',
+            name: 'ViewComponents',
+            component: ViewComponents
         },
         {
             path: '/form-navbar',
@@ -94,3 +106,4 @@ export default new Router({
         },
     ]
 });
+

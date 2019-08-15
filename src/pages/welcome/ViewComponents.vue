@@ -1,7 +1,5 @@
 <template>
     <div>
-        <form-navbar></form-navbar>
-        <form-menu></form-menu>
         <ul>
             <li>
                 <router-link to="/">Login</router-link>
@@ -47,15 +45,8 @@
 </template>
 
 <script>
-    import FormMenu from "../plantilla/FormMenu";
-    import FormNavbar from "../plantilla/FormNavbar";
-
     export default {
-        name: "Welcome",
-        components:{
-            FormMenu,
-            FormNavbar
-        }
+        name: "ViewComponents"
     }
 </script>
 
