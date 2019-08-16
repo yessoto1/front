@@ -4,6 +4,7 @@ import newProcess from "./process/newProcess";
 import newRisk from "./risk/newRisk";
 import newCause from "./identify/newCause";
 import newBestPractice from "./identify/newBestPractice";
+import addAnalysisDetail from "./analyze/addAnalysisDetail";
 
 Vue.use(Vuex);
 
@@ -12,7 +13,8 @@ export default new Vuex.Store({
         newProcess,
         newRisk,
         newCause,
-        newBestPractice
+        newBestPractice,
+        addAnalysisDetail
     },
     strict: true
 });
